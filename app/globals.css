@@ -1,0 +1,26 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:#000;
+  color:#fff;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  overflow-x:hidden;
+}
+section{min-height:100vh;padding:120px 8vw}
+.blue{color:#0473a8}
+/* Custom cursor */
+.cursor{
+  width:18px;height:18px;border-radius:50%;
+  background:#fff;
+  position:fixed;
+  left:0;top:0;
+  pointer-events:none;
+  z-index:9999;
+  mix-blend-mode:difference;
+  transition: transform .06s linear;
+}
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .cursor{display:none}
+}
